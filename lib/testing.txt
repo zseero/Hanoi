@@ -1,0 +1,1 @@
+Now it's time for testing. You will have to solve puzzles with a tower height of 3, 4, 5, and 6. If you cannot possibly solve a challenge, press the Space Bar to skip it, but please try your best. You are being graded on number the number of moves you make, so think before you move.

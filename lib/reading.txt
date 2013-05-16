@@ -1,0 +1,13 @@
+You will only get one chance to read these instructions, so try to understand them as best as you can.
+
+In this game, there are three pegs.
+Each peg can hold a stack of disks on it.
+Each disk is a different size.
+A disk can be picked up off of a peg, and moved to any other peg.
+A disk cannot be placed above a smaller disk. A disk can only be placed on a larger disk.
+
+The key to solving the Towers of Hanoi problem for a tower height of N is to base your approach on the previous case in which the height is N-1. Eventually moving all but the bottom disk to the middle peg is the only way to make it possible to move the bottom (biggest) disk to the goal peg. Thus, thinking of the process of moving the top N-1 disks, you simply need to do this process to move the N-1 disks from the start peg to the middle peg, move the previously mentioned bottom disk to the goal peg, and then move the N-1 disks from the middle peg to the goal peg, solving the puzzle. As an example of this, through brief experimentation, you can solve the N=2 case by hand in three moves starting by initially moving the top disk to the middle peg. Using this result to solve the N=3 case requires only changing the initial move of the smallest disk now to the goal peg. This leads to the top two disks being on the middle peg (instead of on the goal peg), then the third (biggest) disk can be moved to the goal, followed by using the N=2 process to move the last two disks also to the goal peg. When N=4, the idea would be to stack the top two disks on the goal peg (again changing the first move from the previous case – this will lead to an alternating pattern), then creating a stack of three on the middle peg (clearing room for the biggest disk to move to the goal peg, as before), followed by making a stack of four on the goal peg. For any N, this process continues. As a way to check that the number of moves used is truly minimal, remember than the N case uses the N-1 process twice, plus one move to get the biggest disk to the goal peg. Thus, a sequence of moves {1, 2*1+1 = 3, 2*3+1 = 7, 2*7+1=15, …} of minimal moves for value of N greater than or equal to one can be created.
+
+If you learn best by hearing, please take the time to read this text aloud to yourself.
+
+Press Space to continue
